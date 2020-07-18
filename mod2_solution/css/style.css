@@ -1,0 +1,106 @@
+/* For whole Body */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* For Heading */
+h1 {
+    text-align: center;
+}
+
+/* To set position of section head position with respect to it's section */
+div .section1 {
+    position: relative;
+}
+
+div .section2 {
+    position: relative;
+}
+
+div .section3 {
+    position: relative;
+}
+
+.sec_head {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    top: 0px;
+    right: 0px;
+    border: 1.5px solid black;
+
+}
+
+/* To give color to each section heading */
+
+.section1 > .sec_head {
+    background-color: rgb(230, 97, 141);
+}
+
+.section2 > .sec_head {
+    background-color: rgb(189, 60, 60);
+}
+
+.section3 > .sec_head {
+    background-color: rgb(224, 226, 115);
+}
+
+/* To increase margin between the section heading and it's content */
+.section p {
+    margin-top: 40px;
+    overflow: auto;
+}
+
+/* To specify Section properties */
+.section > div {
+    padding: 5px;
+    border: 2px solid black;
+    text-align: left;
+    background-color: gray;
+    box-sizing: border-box;
+
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .section > div {
+        float: left;
+        width: 30%;
+        margin: 1.6%;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 991px) and (min-width: 768px) {
+    .section1 {
+        float: left;
+        width: 45%;
+        margin: 2.5%;
+    }
+
+    .section2 {
+        float: right;
+        width: 45%;
+        margin: 2.5%;
+    }
+
+    .section3 {
+        float: left;
+        width: 95%;
+        margin: 2.5%;
+        margin-right: 3;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .section1, .section2, .section3 {
+        float: left;
+        width: 95%;
+        margin: 2.5%;
+    }
+
+}
+
+
