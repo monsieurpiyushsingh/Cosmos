@@ -1,2 +1,2 @@
-# Cosmos
+# Coursera
 A test Repository
